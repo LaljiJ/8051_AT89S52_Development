@@ -1,0 +1,8 @@
+Extra things need to find our from below website:
+https://silicontechnolabs.in/
+
+Software used by as for ISP:
+AVRDUDE
+
+Programmer used by as:
+Silicon Technolab
