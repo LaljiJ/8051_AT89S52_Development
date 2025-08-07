@@ -1,0 +1,85 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              08/07/2025 13:10:07 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          // Standard  header file include
+   2          #include <reg51.h>
+   3          
+   4          
+   5          // User define  header file include
+   6          #include <stdio.h>
+   7          
+   8          
+   9          // Global variable for single bit
+  10          sbit LED1 = P0^0;
+  11          
+  12          
+  13          // Function defination
+  14          void delay_ms(unsigned int);
+  15          void delay_1ms(void) ;
+  16          
+  17          
+  18          // Start main function
+  19          void main(void)
+  20          {
+  21   1        P0 = 0x00;
+  22   1        while(1)
+  23   1        {
+  24   2          LED1 = 1;
+  25   2          delay_ms(1000);
+  26   2          LED1 = 0;
+  27   2          delay_ms(1000);
+  28   2        }
+  29   1      
+  30   1      }
+  31          
+  32          // Function declration
+  33          void delay_ms(unsigned int ms)
+  34          {
+  35   1        while(ms--)
+  36   1        {
+  37   2          delay_1ms();
+  38   2        }
+  39   1      }
+  40          
+  41          void delay_1ms(void) 
+  42          {
+  43   1        
+  44   1          TMOD &= 0xF0;  // Clear lower 4 bits for Timer0 mode
+  45   1          TMOD |= 0x01;  // Timer0 mode 1 (16-bit)
+  46   1      
+  47   1          // For 11.0592 MHz, 1ms = 1000us
+  48   1          // Timer counts = 1000us / (1.085us per count) ˜ 921
+  49   1          // 65536 - 921 = 64615 = 0xFC67
+  50   1      
+  51   1          TH0 = 0xFC;
+  52   1          TL0 = 0x67;
+  53   1      
+  54   1          TR0 = 1;          // Start Timer0
+C51 COMPILER V9.60.7.0   MAIN                                                              08/07/2025 13:10:07 PAGE 2   
+
+  55   1          while(TF0 == 0);  // Wait for overflow
+  56   1          TR0 = 0;          // Stop Timer0
+  57   1          TF0 = 0;          // Clear overflow flag
+  58   1          
+  59   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     68    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
