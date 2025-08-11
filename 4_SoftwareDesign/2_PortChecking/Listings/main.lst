@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 05:41:52 PAGE 1   
+C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 13:20:36 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
@@ -27,73 +27,75 @@ line level    source
   17          void main(void)
   18          {
   19   1          init_all_port();
-  20   1      
-  21   1          blink_port0_leds();
-  22   1          // blink_port1_leds();
-  23   1          // blink_port2_leds();
-  24   1          // blink_port3_leds();
-  25   1      
-  26   1      }
-  27          
-  28          
+  20   1        
+  21   1          while(1)
+  22   1          {
+  23   2            blink_port0_leds();
+  24   2            // blink_port1_leds();
+  25   2            // blink_port2_leds();
+  26   2            // blink_port3_leds();
+  27   2          }
+  28   1      }
   29          
   30          
-  31          // Functions declration
-  32          /* 
-  33          Initialize all ports for output
-  34          If we write on 1 on this port then it will on the LED.
-  35          */
-  36          void init_all_port(void)
-  37          {
-  38   1          init_port0();
-  39   1          init_port1();
-  40   1          init_port2();
-  41   1          init_port3();
-  42   1      }
-  43          
-  44          /* 
-  45          Initialize port0 for output
-  46          If we write on 1 on this port then it will on the LED.
-  47          */
-  48          void init_port0(void)
-  49          {
-  50   1          P0 = 0x00;
-  51   1      }
-  52          
-  53          /*
-  54          Initialize port1 for output
-C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 05:41:52 PAGE 2   
+  31          
+  32          
+  33          // Functions declration
+  34          /* 
+  35          Initialize all ports for output
+  36          If we write on 1 on this port then it will on the LED.
+  37          */
+  38          void init_all_port(void)
+  39          {
+  40   1          init_port0();
+  41   1          init_port1();
+  42   1          init_port2();
+  43   1          init_port3();
+  44   1      }
+  45          
+  46          /* 
+  47          Initialize port0 for output
+  48          If we write on 1 on this port then it will on the LED.
+  49          */
+  50          void init_port0(void)
+  51          {
+  52   1          P0 = 0x00;
+  53   1      }
+  54          
+C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 13:20:36 PAGE 2   
 
-  55          If we write on 1 on this port then it will on the LED.
-  56          */
-  57          void init_port1(void)
-  58          {
-  59   1          P1 = 0x00;
-  60   1      }
-  61          
-  62          
-  63          /*
-  64          Initialize port2 for output
-  65          If we write on 1 on this port then it will on the LED.
-  66          */
-  67          void init_port2(void)
-  68          {
-  69   1          P2 = 0x00;
-  70   1      }
-  71          
-  72          
-  73          /*
-  74          Initialize port3 for output
-  75          If we write on 1 on this port then it will on the LED.
-  76          */
-  77          void init_port3(void)
-  78          {
-  79   1          P3 = 0x00;
-  80   1      }
+  55          /*
+  56          Initialize port1 for output
+  57          If we write on 1 on this port then it will on the LED.
+  58          */
+  59          void init_port1(void)
+  60          {
+  61   1          P1 = 0x00;
+  62   1      }
+  63          
+  64          
+  65          /*
+  66          Initialize port2 for output
+  67          If we write on 1 on this port then it will on the LED.
+  68          */
+  69          void init_port2(void)
+  70          {
+  71   1          P2 = 0x00;
+  72   1      }
+  73          
+  74          
+  75          /*
+  76          Initialize port3 for output
+  77          If we write on 1 on this port then it will on the LED.
+  78          */
+  79          void init_port3(void)
+  80          {
+  81   1          P3 = 0x00;
+  82   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     34    ----
+   CODE SIZE        =     36    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

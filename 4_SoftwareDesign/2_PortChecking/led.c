@@ -3,9 +3,19 @@
 #include "led.h"
 
 
+
 // Port0 all LEDs check
 void blink_port0_leds(void)
 {
+	LED0 = OFF;
+	LED1 = OFF;
+	LED2 = OFF;
+	LED3 = OFF;
+	LED4 = OFF;
+	LED5 = OFF;
+	LED6 = OFF;
+	LED7 = OFF;
+	
     LED0 = ON;
     delay_ms(1000);
     LED0 = OFF;
@@ -51,6 +61,15 @@ void blink_port0_leds(void)
 // Port1 all LEDs check
 void blink_port1_leds(void)
 {
+	LED8 = OFF;
+	LED9 = OFF;
+	LED10 = OFF;
+	LED11 = OFF;
+	LED12 = OFF;
+	LED13 = OFF;
+	LED14 = OFF;
+	LED15 = OFF;
+	
     LED8 = ON;
     delay_ms(1000);
     LED8 = OFF;
@@ -96,6 +115,15 @@ void blink_port1_leds(void)
 // Port2 all LEDs check
 void blink_port2_leds(void)
 {
+	LED16 = OFF;
+	LED17 = OFF;
+	LED18 = OFF;
+	LED19 = OFF;
+	LED20 = OFF;
+	LED21 = OFF;
+	LED22 = OFF;
+	LED23 = OFF;
+	
     LED16 = ON;
     delay_ms(1000);
     LED16 = OFF;
@@ -141,6 +169,15 @@ void blink_port2_leds(void)
 // Port3 all LEDs check
 void blink_port3_leds(void)
 {
+	LED24 = OFF;
+	LED25 = OFF;
+	LED26 = OFF;
+	LED27 = OFF;
+	LED28 = OFF;
+	LED29 = OFF;
+	LED30 = OFF;
+	LED31 = OFF;
+	
     LED24 = ON;
     delay_ms(1000);
     LED24 = OFF;

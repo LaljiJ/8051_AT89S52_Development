@@ -17,12 +17,14 @@
 void main(void)
 {
     init_all_port();
-
-    blink_port0_leds();
-		// blink_port1_leds();
-		// blink_port2_leds();
-		// blink_port3_leds();
-
+	
+    while(1)
+    {
+			blink_port0_leds();
+			// blink_port1_leds();
+			// blink_port2_leds();
+			// blink_port3_leds();
+    }
 }
 
 

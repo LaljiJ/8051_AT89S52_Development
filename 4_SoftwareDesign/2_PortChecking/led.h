@@ -1,8 +1,8 @@
 #include <reg51.h>
 
 // macros led ON and OFF
-#define ON	1
-#define OFF	0
+#define OFF	1
+#define ON	0
 
 // All port 0 led are define here
 sbit LED0 = P0^0;
