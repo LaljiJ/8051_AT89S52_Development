@@ -6,3 +6,7 @@ AVRDUDE
 
 Programmer used by as:
 Silicon Technolab
+
+
+Learning Links:
+https://github.com/sarincr/Learn-Embedded-C-with-8051-Microcontroller
