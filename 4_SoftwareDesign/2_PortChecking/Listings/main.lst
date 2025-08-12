@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 13:20:36 PAGE 1   
+C51 COMPILER V9.60.7.0   MAIN                                                              08/12/2025 08:24:40 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
@@ -8,90 +8,85 @@ COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE 
 
 line level    source
 
-   1          // All standard header file declaration
+   1          /*----- Standard headerfile -----*/
    2          #include <reg51.h>
    3          
-   4          // All user define header file declaration
-   5          #include "main.h"
-   6          #include "timer.h"
-   7          #include "led.h"
-   8          
-   9          // Macro define
+   4          
+   5          /*----- User define headerfiles -----*/
+   6          #include "main.h"
+   7          #include "timer.h"
+   8          #include "led.h"
+   9          
   10          
   11          
-  12          //Global variables
-  13          
-  14          
-  15          
-  16          // Start main function
-  17          void main(void)
-  18          {
-  19   1          init_all_port();
-  20   1        
-  21   1          while(1)
-  22   1          {
-  23   2            blink_port0_leds();
-  24   2            // blink_port1_leds();
-  25   2            // blink_port2_leds();
-  26   2            // blink_port3_leds();
-  27   2          }
-  28   1      }
-  29          
-  30          
-  31          
-  32          
-  33          // Functions declration
-  34          /* 
-  35          Initialize all ports for output
-  36          If we write on 1 on this port then it will on the LED.
-  37          */
-  38          void init_all_port(void)
-  39          {
-  40   1          init_port0();
-  41   1          init_port1();
-  42   1          init_port2();
-  43   1          init_port3();
-  44   1      }
-  45          
-  46          /* 
-  47          Initialize port0 for output
-  48          If we write on 1 on this port then it will on the LED.
-  49          */
-  50          void init_port0(void)
-  51          {
-  52   1          P0 = 0x00;
-  53   1      }
-  54          
-C51 COMPILER V9.60.7.0   MAIN                                                              08/11/2025 13:20:36 PAGE 2   
+  12          /*----- Main function -----*/
+  13          void main(void)
+  14          {
+  15   1          init_all_port();
+  16   1        
+  17   1          while(1)
+  18   1          {
+  19   2            blink_port0_leds();
+  20   2            // blink_port1_leds();
+  21   2            // blink_port2_leds();
+  22   2            // blink_port3_leds();
+  23   2          }
+  24   1      }
+  25          
+  26          
+  27          
+  28          /*----- Function declaration -----*/
+  29          /* 
+  30          Initialize all ports for output
+  31          If we write on 1 on this port then it will on the LED.
+  32          */
+  33          void init_all_port(void)
+  34          {
+  35   1          init_port0();
+  36   1          init_port1();
+  37   1          init_port2();
+  38   1          init_port3();
+  39   1      }
+  40          
+  41          /* 
+  42          Initialize port0 for output
+  43          If we write on 1 on this port then it will on the LED.
+  44          */
+  45          void init_port0(void)
+  46          {
+  47   1          P0 = 0x00;
+  48   1      }
+  49          
+  50          /*
+  51          Initialize port1 for output
+  52          If we write on 1 on this port then it will on the LED.
+  53          */
+  54          void init_port1(void)
+C51 COMPILER V9.60.7.0   MAIN                                                              08/12/2025 08:24:40 PAGE 2   
 
-  55          /*
-  56          Initialize port1 for output
-  57          If we write on 1 on this port then it will on the LED.
-  58          */
-  59          void init_port1(void)
-  60          {
-  61   1          P1 = 0x00;
-  62   1      }
-  63          
-  64          
-  65          /*
-  66          Initialize port2 for output
-  67          If we write on 1 on this port then it will on the LED.
-  68          */
-  69          void init_port2(void)
-  70          {
-  71   1          P2 = 0x00;
-  72   1      }
-  73          
-  74          
-  75          /*
-  76          Initialize port3 for output
-  77          If we write on 1 on this port then it will on the LED.
-  78          */
-  79          void init_port3(void)
-  80          {
-  81   1          P3 = 0x00;
-  82   1      }
+  55          {
+  56   1          P1 = 0x00;
+  57   1      }
+  58          
+  59          
+  60          /*
+  61          Initialize port2 for output
+  62          If we write on 1 on this port then it will on the LED.
+  63          */
+  64          void init_port2(void)
+  65          {
+  66   1          P2 = 0x00;
+  67   1      }
+  68          
+  69          
+  70          /*
+  71          Initialize port3 for output
+  72          If we write on 1 on this port then it will on the LED.
+  73          */
+  74          void init_port3(void)
+  75          {
+  76   1          P3 = 0x00;
+  77   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE

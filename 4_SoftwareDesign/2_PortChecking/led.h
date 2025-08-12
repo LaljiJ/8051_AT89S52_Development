@@ -1,6 +1,6 @@
 #include <reg51.h>
 
-// macros led ON and OFF
+/*----- Macros for port ON/OFF-----*/
 #define OFF	1
 #define ON	0
 
@@ -45,6 +45,7 @@ sbit LED30 = P3^6;
 sbit LED31 = P3^7;
 
 
+// Function definations
 void blink_port0_leds(void);
 void blink_port1_leds(void);
 void blink_port2_leds(void);

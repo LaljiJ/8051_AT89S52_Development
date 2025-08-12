@@ -17,6 +17,7 @@ unsigned char heart[8] = {
 };
 */
 
+
 // Initialize LCD
 void lcd_init(void) 
 {
@@ -74,7 +75,7 @@ void lcd_data(unsigned char dat)
 // Print string to LCD
 void lcd_print_string(char *str) 
 {
-	lcd_clear(LCD_CLEAR); // Clear the lcd
+		lcd_clear(LCD_CLEAR); // Clear the lcd
 	
     while (*str) 
 		{

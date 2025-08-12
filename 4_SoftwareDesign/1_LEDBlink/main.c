@@ -1,21 +1,18 @@
-// Standard  header file include
+/*----- Standard  header file include -----*/
 #include <reg51.h>
-
-
-// User define  header file include
 #include <stdio.h>
 
 
-// Global variable for single bit
+/*----- Global variables -----*/
 sbit LED1 = P0^0;
 
 
-// Function defination
+/*----- Function definations -----*/
 void delay_ms(unsigned int);
 void delay_1ms(void) ;
 
 
-// Start main function
+/*----- Start execution -----*/
 void main(void)
 {
 	P0 = 0x00;
@@ -29,7 +26,11 @@ void main(void)
 
 }
 
-// Function declration
+
+/*----- Function declaration -----*/
+
+
+// Delay for ms 
 void delay_ms(unsigned int ms)
 {
 	while(ms--)
@@ -37,6 +38,7 @@ void delay_ms(unsigned int ms)
 		delay_1ms();
 	}
 }
+
 
 void delay_1ms(void) 
 {

@@ -1,8 +1,14 @@
+/*----- standard headerfile -----*/
 #include <reg51.h>
+
+
+/*----- User define header files -----*/
 #include "main.h"
 #include "timer.h"
 #include "lcd.h"
 
+
+/*----- Main function -----*/
 void main(void)
 {
 	lcd_init();

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
  
-// Functions defination
+/*----- Function definations -----*/
 void init_port0(void);
 void init_port1(void);
 void init_port2(void);

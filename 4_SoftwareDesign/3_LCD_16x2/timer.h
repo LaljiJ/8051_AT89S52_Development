@@ -1,6 +1,6 @@
 #include <reg51.h>
 
 
-// delay function defination
+/*----- Function definations -----*/
 void delay_ms(unsigned int);
 void delay_1ms_timer(void);

@@ -1,19 +1,15 @@
-// All standard header file declaration
+/*----- Standard headerfile -----*/
 #include <reg51.h>
 
-// All user define header file declaration
+
+/*----- User define headerfiles -----*/
 #include "main.h"
 #include "timer.h"
 #include "led.h"
 
-// Macro define
 
 
-//Global variables
-
-
-
-// Start main function
+/*----- Main function -----*/
 void main(void)
 {
     init_all_port();
@@ -29,8 +25,7 @@ void main(void)
 
 
 
-
-// Functions declration
+/*----- Function declaration -----*/
 /* 
 Initialize all ports for output
 If we write on 1 on this port then it will on the LED.

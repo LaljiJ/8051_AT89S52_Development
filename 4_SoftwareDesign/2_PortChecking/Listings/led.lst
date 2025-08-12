@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   LED                                                               08/11/2025 13:20:10 PAGE 1   
+C51 COMPILER V9.60.7.0   LED                                                               08/12/2025 08:24:40 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE LED
@@ -62,7 +62,7 @@ line level    source
   52   1          delay_ms(1000);
   53   1      
   54   1          LED7 = ON;
-C51 COMPILER V9.60.7.0   LED                                                               08/11/2025 13:20:10 PAGE 2   
+C51 COMPILER V9.60.7.0   LED                                                               08/12/2025 08:24:40 PAGE 2   
 
   55   1          delay_ms(1000);
   56   1          LED7 = OFF;
@@ -126,7 +126,7 @@ line level    source
  114          
  115          // Port2 all LEDs check
  116          void blink_port2_leds(void)
-C51 COMPILER V9.60.7.0   LED                                                               08/11/2025 13:20:10 PAGE 3   
+C51 COMPILER V9.60.7.0   LED                                                               08/12/2025 08:24:40 PAGE 3   
 
  117          {
  118   1        LED16 = OFF;
@@ -190,7 +190,7 @@ line level    source
  176   1        LED28 = OFF;
  177   1        LED29 = OFF;
  178   1        LED30 = OFF;
-C51 COMPILER V9.60.7.0   LED                                                               08/11/2025 13:20:10 PAGE 4   
+C51 COMPILER V9.60.7.0   LED                                                               08/12/2025 08:24:40 PAGE 4   
 
  179   1        LED31 = OFF;
  180   1        
