@@ -5,7 +5,7 @@
 /*----- User define header files -----*/
 #include "main.h"
 #include "timer.h"
-#include "lcd.h"
+#include "lcd_driver.h"
 
 
 /*----- Main function -----*/

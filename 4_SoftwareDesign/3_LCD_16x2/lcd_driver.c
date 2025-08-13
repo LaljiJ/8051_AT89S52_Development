@@ -1,7 +1,7 @@
 #include <reg51.h>
 #include <stdio.h>
 #include <string.h>
-#include "lcd.h"
+#include "lcd_driver.h"
 #include "timer.h"
 
 /*

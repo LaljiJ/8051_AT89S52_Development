@@ -46,7 +46,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>LCDProject</OutputName>
+          <OutputName>SIM800LModule_UART</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -233,7 +233,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0xffff</Size>
+                <Size>0x10000</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -382,9 +382,14 @@
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>main.h</FileName>
+              <FileName>sim800l.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sim800l.c</FilePath>
+            </File>
+            <File>
+              <FileName>sim800l.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\main.h</FilePath>
+              <FilePath>.\sim800l.h</FilePath>
             </File>
             <File>
               <FileName>timer.c</FileName>
@@ -397,14 +402,14 @@
               <FilePath>.\timer.h</FilePath>
             </File>
             <File>
-              <FileName>lcd_driver.c</FileName>
+              <FileName>uart_driver.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lcd_driver.c</FilePath>
+              <FilePath>.\uart_driver.c</FilePath>
             </File>
             <File>
-              <FileName>lcd_driver.h</FileName>
+              <FileName>uart_driver.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\lcd_driver.h</FilePath>
+              <FilePath>.\uart_driver.h</FilePath>
             </File>
           </Files>
         </Group>
